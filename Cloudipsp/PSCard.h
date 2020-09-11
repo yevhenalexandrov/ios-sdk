@@ -32,4 +32,9 @@ typedef enum : NSUInteger {
 + (NSString *)getCardTypeName:(PSCardType)type;
 + (PSCardType)getCardType:(NSString *)typeName;
 
++ (instancetype)cardWith:(NSString *)cardNumber
+                expireMm:(int)mm
+                expireYy:(int)yy
+                    aCvv:(NSString *)cvv;
+
 @end
